@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.paipeng'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {url 'https://download2.dynamsoft.com/maven/dbr/jar'}
+}
+
+dependencies {
+    implementation 'com.dynamsoft:dbr:8.8.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
